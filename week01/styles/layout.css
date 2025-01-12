@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    align-items: center;
+    background-color: darkgrey;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: black;
+}

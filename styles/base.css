@@ -1,0 +1,123 @@
+:root {
+    --primary: #034f84;
+    --secondary: #696969;
+    --text: black;
+    --text2: #cac4ce;
+    --secondary-text: #ebe9e9;
+    --background: #d3d3d3; 
+}
+
+header {
+    display: block;
+}
+
+body {
+    display: grid;
+    background-color: var(--background);
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: var(--text2);
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, footer {
+    text-align: center;
+    background-color: #034f84;
+    padding: 10px;
+    margin: 0;
+    color: var(--secondary-text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    border: 4px none black;
+    border-radius: 0.75rem;
+    text-align: left;
+    margin: 10px;
+    background-color: white;
+}
+
+.card h2 {
+    border-radius: 0.75rem;
+    margin: 5px;
+}
+
+.profile img {
+    float: right;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+}
+
+.state img {
+    float: left;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    margin: 10px;
+}
+.card h3 {
+    text-align: center;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    width: fit-content;
+    align-self: baseline;
+}
+
+.card div {
+    padding: 2rem;
+}
+
+.resources {
+    list-style: disc inside;
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+li a {
+    color: var(--text);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+li:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
