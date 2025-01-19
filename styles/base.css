@@ -16,6 +16,10 @@ body {
     background-color: var(--background);
 }
 
+main {
+    max-width: fit-content;
+}
+
 nav {
     display: flex;
     padding: 10px;
