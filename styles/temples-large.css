@@ -1,0 +1,38 @@
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, 350px);
+        grid-gap: 30px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
