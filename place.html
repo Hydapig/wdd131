@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Mike Hyde Contry Page">
+    <meta name="Author" content="Mike Hyde">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>República Argentina</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/argentinaflag-large.webp" media="minwidth: 1000px">
+                <source srcset="images/argentinaflag-medium.webp" media="mindwidth: 500px">
+                <img src="images/argentinaflag-small.webp" alt="Argentina Flag" width="500" height="250">
+            </picture>
+        </div>
+        <aside class="data">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Area:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Capitol:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Languages:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Currency:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Calling Code:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Internet TLD:</td>
+                        <td>value</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+        <aside class="weather">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Weather <span>⛅</span></th>
+                    </tr>
+                </thead>
+                <body>
+                    <tr>
+                        <td>Temperature:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Conditions:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Wind:</td>
+                        <td>value</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td>value</td>
+                    </tr>
+                </body>
+            </table>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Mike Hyde | Utah</p>
+        <p>last modified: <span id="lastModified"></span></p>
+    </footer>    
+</body>
+</html>
