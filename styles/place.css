@@ -3,12 +3,17 @@
     --secondary-color: #FFB81C;
     --background-color: #FFFFFF;
     --alt-color: #7D4016; 
+    --text-color: black;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 header,
 footer {
     background-color: var(--primary-color);
-    color: var(--alt-color);
+    color: var(--text-color);
     text-align: center;
     padding: 1em 0;
 }
@@ -31,7 +36,7 @@ main {
 .weather, .data {
     position: absolute;
     width: 30%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px var(--alt-color);
     background-color: var(--background-color);
     border-collapse: collapse;
 }
@@ -39,17 +44,44 @@ main {
 .data {
     left: 10%;
     top: 20%;
+    max-width: 400px;
+}
+
+.data thead, .weather thead {
+    background-color: var(--primary-color);
+    margin: 10px auto;
+    font-size: 15pt;
+    
 }
 
 .weather {
     right: 10%;
     top: 40%;
+    max-width: 400px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 10px 0;
+    font-weight: 400;
+    border: var(--secondary-color);
+}
+
+td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+.emoticon {
+    display: none;
+}
+
+.weather thead th::after {
+    content: url(/wdd131/images/weather.svg);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 500px) {
@@ -65,5 +97,17 @@ table {
 
     .hero img {
         width: 100%;
+    }
+
+    .svg {
+        display: none;
+    }
+
+    .emoticon {
+        display: inline-block;
+    }
+
+    .weather thead th::after {
+        content: '';
     }
 }

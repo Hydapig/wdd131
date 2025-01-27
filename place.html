@@ -7,7 +7,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Mike Hyde Contry Page">
     <meta name="Author" content="Mike Hyde">
     <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js" defer></script>
+    <script type="module" src="scripts/place.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
@@ -34,35 +34,35 @@
                 <tbody>
                     <tr>
                         <td>Area:</td>
-                        <td>value</td>
+                        <td>2,780,400 km2</td>
                     </tr>
                     <tr>
                         <td>Population:</td>
-                        <td>value</td>
+                        <td>47,067,441</td>
                     </tr>
                     <tr>
                         <td>Capitol:</td>
-                        <td>value</td>
+                        <td>Buenos Aires</td>
                     </tr>
                     <tr>
                         <td>Languages:</td>
-                        <td>value</td>
+                        <td>Spanish</td>
                     </tr>
                     <tr>
                         <td>Currency:</td>
-                        <td>value</td>
+                        <td>Argentine peso</td>
                     </tr>
                     <tr>
                         <td>Time Zone:</td>
-                        <td>value</td>
+                        <td>UTC-3</td>
                     </tr>
                     <tr>
                         <td>Calling Code:</td>
-                        <td>value</td>
+                        <td>+54</td>
                     </tr>
                     <tr>
                         <td>Internet TLD:</td>
-                        <td>value</td>
+                        <td>.ar</td>
                     </tr>
                 </tbody>
             </table>
@@ -71,25 +71,31 @@
             <table>
                 <thead>
                     <tr>
-                        <th colspan="2">Weather <span>⛅</span></th>
+                        <th colspan="2">
+                            Weather  
+                            <!-- <span class="svg">
+                                <img src="images/weather.svg"></svg>
+                            </span> -->
+                            <span class="emoticon">⛅</span>
+                        </th>    
                     </tr>
                 </thead>
                 <body>
                     <tr>
                         <td>Temperature:</td>
-                        <td>value</td>
+                        <td><span id="Temp"></span></td>
                     </tr>
                     <tr>
                         <td>Conditions:</td>
-                        <td>value</td>
+                        <td><span id="Condition"></td>
                     </tr>
                     <tr>
                         <td>Wind:</td>
-                        <td>value</td>
+                        <td><span id="windSpeed"></td>
                     </tr>
                     <tr>
                         <td>Wind Chill:</td>
-                        <td>value</td>
+                        <td><span id="windChill"></td>
                     </tr>
                 </body>
             </table>
