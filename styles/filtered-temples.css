@@ -107,7 +107,6 @@ h1, h2, footer{
     box-shadow: 0 4px 8px var(--secondary);
     max-width: 300px;
     text-align: center;
-    background-color: var(--text2);
 }
 
 .temple-card img {
