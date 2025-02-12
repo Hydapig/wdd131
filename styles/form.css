@@ -38,6 +38,7 @@ body {
 }
 .product span {
     color: var(--optional);
+    font-size: .9rem;
 }
 
 
@@ -92,6 +93,15 @@ body {
 
 .rating label {
     color: orange;
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
+.product input:required,
+.product select {
+    border-left: solid 8px red;
+}
+
+.product input:required:valid,
+.product select:valid {
+    border-left: solid 8px green;
+}

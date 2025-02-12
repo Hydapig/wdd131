@@ -1,0 +1,21 @@
+:root {
+    --background: #DFE2E1;
+    --optional: #0077B6;
+    --headers: #332E3C;
+}
+
+header, footer {
+    background-color: var(--headers);
+    color: white;
+    text-align: center;
+    padding: .75rem;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+}
