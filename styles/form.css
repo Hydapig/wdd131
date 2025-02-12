@@ -1,0 +1,97 @@
+:root {
+    --background: #DFE2E1;
+    --optional: #0077B6;
+    --headers: #332E3C;
+}
+
+header, footer {
+    background-color: var(--headers);
+    color: white;
+    text-align: center;
+    padding: .75rem;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    color: black;
+}
+
+.product fieldset {
+    margin: 1rem 0;
+    border: 1px solid var(--headers);
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: var(--background);
+    color: var(--headers);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.product label {
+    display: block;
+    padding-top: .5rem;
+    font-size: .9rem;
+    margin-top: 10px;
+}
+.product span {
+    color: var(--optional);
+}
+
+
+.product input[type="date"],
+.product input[type="text"],
+.product select, 
+.product textarea {
+    display: block;
+    border: solid 1px var(--headers);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.product select {
+    max-width: 524px;
+}
+
+.product input[type="chekbox"] {
+    margin-right: 6px;
+}
+
+.product textarea {
+    width: 500px;
+    height: 200px;
+}
+
+.product input[type="submit"] {
+    border: none;
+    background-color: var(--headers);
+    color: white;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 524px;
+    margin: 1.5rem 0% 1rem 0%;
+    font-size: 1.5rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rating div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating label {
+    color: orange;
+    font-size: 2rem;
+}
+

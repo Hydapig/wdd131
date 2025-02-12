@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="product">
+            <fieldset>
+                <label>Product Name
+                    <select name="product" id="product" required>
+                        <option value="">Choose a Product...</option>
+                        <option value=""></option>
+                    </select></label>
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <div><label>☆</label><input type="radio" id="onestar" name="rating" required></div>
+                    <div><label>☆☆</label><input type="radio" id="twostar" name="rating" required></div>
+                    <div><label>☆☆☆</label><input type="radio" id="threestar" name="rating" required></div>
+                    <div><label>☆☆☆☆</label><input type="radio" id="fourstar" name="rating" required></div>
+                    <div><label>☆☆☆☆☆</label><input type="radio" id="fivestar" name="rating" required></div>
+                </div>
+                <label>Date of Installation
+                    <input type="date" id="installdate" name="date" required>
+                </label>
+                <label>
+                    <div>Which features did you find useful in the product?</div>
+                    <span>(Check all that apply)</span>
+                    <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+                </label>
+                <label>Written Review
+                    <span>(Optional)</span>
+                    <textarea name="review" id="review" rows="3"></textarea>
+                </label>
+                <label>Your Name
+                    <span>(Optional)</span>
+                    <input type="text" name="username" id="name">
+                </label>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Mike Hyde | Utah</p>
+        <p>last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
