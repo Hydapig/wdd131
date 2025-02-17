@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Valley PC Gamers - Mike Hyde</title>
+    <meta name="description" content="A local guide for PC gamers">
+    <meta name="author" content="Mike Hyde">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cache Valley PC Gamers</h1>
+        <a id="menu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="components.html" id="build">PC Components</a></li>
+                <li><a href="guides.html" id="buy">PC Guides</a></li>
+                <li><a href="platform.html" id="game">Game Platforms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="welcome">
+            <h2>Welcome</h2>
+            <p>Welcome to Cache Valley PC Gamers! Whether you are a just stepping into the world of PC gaming or have been gaming for years,
+                you'll find guides on what to buy, where to buy, and some recommended gaming platforms to build up your game collection.
+            </p>
+        </div>
+        <section>
+            <div id="componentDiv">
+                <h2>PC Components</h2>
+                <picture><img src="images/components.jpg" alt="motherboard" loading="lazy"></picture>
+            </div>
+            <div id="guideDiv">
+                <h2>PC Guides</h2>
+                <picture><img src="images/guide.jpg" alt="guides" loading="lazy"></picture>
+            </div>
+            <div id="platformDiv">
+                <h2>Game Platforms</h2>
+                <picture class="platforms"><img src="images/steam.png" alt="steam" loading="lazy"></picture>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Mike Hyde | Utah</p>
+        <p>last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

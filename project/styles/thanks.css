@@ -1,0 +1,180 @@
+:root {
+    --background-alt: #424342;
+    --background-color: #292929;
+    --text-color: #ECE4B7;
+    --other-color: #DA7D58;
+    --alt-color: #0D87BF;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2, figcaption {
+    color: var(--other-color);
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: .5rem;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+header, footer {
+    border: 2px solid var(--other-color);
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text2);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    font-size: larger;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    color: var(--alt-color);
+}
+
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    color: var(--text2);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.show li {
+    display: block;
+}
+
+.guide fieldset {
+    margin: 0 auto;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    max-width: 500px;
+}
+
+.guide label {
+    display: block;
+    padding-top: .5rem;
+    font-size: .9rem;
+    margin-top: 10px;
+    
+}
+
+.guide input[type="email"],
+.guide input[type="text"],
+.guide select {
+    display: block;
+    border: solid 1px var(--headers);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 468px;
+    margin-top: 10px;
+}
+
+.guide select {
+    max-width: 524px;
+}
+
+.guide input[type="submit"] {
+    border: none;
+    background-color: var(--background-color);
+    background-image: linear-gradient(var(--background-alt), var(--background-color));
+    color: var(--other-color);
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 1.5rem 0% 1rem 0%;
+    font-size: 1.5rem;
+}
+
+.guide input[type="submit"]:hover {
+    color: var(--alt-color);
+    cursor: pointer;
+}
+
+.guide input:required,
+.guide select {
+    border-left: solid 8px red;
+}
+
+.guide input:required:valid,
+.guide select:valid {
+    border-left: solid 8px green;
+}
+
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+}

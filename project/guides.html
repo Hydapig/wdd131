@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Valley PC Gamers - Mike Hyde</title>
+    <meta name="description" content="A local guide for PC gamers">
+    <meta name="author" content="Mike Hyde">
+    <link rel="stylesheet" href="styles/guides.css">
+    <script src="scripts/guides.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cache Valley PC Gamers</h1>
+        <a id="menu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="components.html" id="build">PC Components</a></li>
+                <li><a href="guides.html" id="buy">PC Guides</a></li>
+                <li><a href="platform.html" id="game">Game Platforms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>PC Guide</h2>
+        <p>Welcome to our PC guide page. We have several different guides to help you with building your PC, recommended parts, purchasing guides, and more. 
+            Please fill out the form below and your selected guide will be emailed directly to you.
+        </p>
+        <form action="thanks.html" method="get" class="guide">
+            <fieldset>
+                <label>Your Name
+                    <input type="text" name="username" id="name" required>
+                </label>
+                <label>Email
+                    <input type="email" name="useremail" id="email" required>
+                </label>
+                <label>Guides
+                    <select name="guide" id="guide" required>
+                        <option value="" disabled selected>Choose a Guide...</option>
+                    </select>
+                </label>
+                <label>Have additional questions?</label>
+                <label><input type="radio" id="yesRadio" name="showInput" value="yes" onclick="toggleText()" required> Yes</label>
+                <label><input type="radio" id="noRadio" name="showInput" value="no" onclick="toggleText()" required> No</label>
+                <div id="userQuestions">
+                    <label for="questions">Enter Your Question:</label>
+                    <textarea name="questions" id="questions"></textarea>
+                </div>
+                <input type="submit" value="Receive My Guide">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Mike Hyde | Utah</p>
+        <p>last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
